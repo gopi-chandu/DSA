@@ -16,7 +16,7 @@ class maxPriorityQueue
     void insert(int element)
     {
         pq.push_back(element);
-        int childIndex=pq[pq.size()-1];
+        int childIndex=pq.size()-1;
         while (childIndex>0)
         {
             int parentIndex=(childIndex-1)/2;
